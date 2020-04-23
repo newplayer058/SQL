@@ -1,3 +1,16 @@
+drop table student--删除表
+create table student--创建新表student
+(sno char(9),--学生学号
+sanme char(8),--学生姓名
+ssex char(2),--学生性别
+sage int,--年龄
+sdept char(20)--所属院系
+)
+insert into student values
+('201215121','李勇','男',20,'CS'),('201215122','刘晨','女',19,'CS')
+,('201215123','王敏','女',18,'MA'),('201215125','张立','男',19,'IS')
+select * 
+from student
 drop table sc;--删除之前编写sc列表
 create table sc--创建新表sc
 (sno char(9),cno char(4),grade int)--编写表内元素sno（学生学号），cno（课程号），grade（学科分数）
