@@ -1,0 +1,20 @@
+drop table sc;--删除之前编写sc列表
+create table sc--创建新表sc
+(sno char(9),cno char(4),grade int)--编写表内元素sno（学生学号），cno（课程号），grade（学科分数）
+insert into sc values
+('201215121','1',92),('201215121','2',85),('201215121','3',88),('201215122','2',90),('201215123','3',80)--将表中元素插入
+select *--检索所有数据
+from sc;--检索地址
+drop table course;--删除之前编写的course表
+create table course--创建新表course
+(cno char(4),cname char(20),cpno char(4),Ccredit int)--cno（学科序号），cname（学科名称），cpno（前驱学科），Credict（该学科学分）
+insert into course values--插入数据
+('1','数据库','5',4),
+('2','数学',' ',2),
+('3','信息系统','1',4),
+('4','操作系统','6',3),
+('5','数据结构','7',4),
+('6','数据处理',' ',2),
+('7','PASCAL语言','6',4)
+select*
+from course
